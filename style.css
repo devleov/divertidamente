@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa {
+  width: 350px;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circulo {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: red;
+  animation: carregando 1s infinite alternate;
+}
+
+.alegria {
+  background-color: #ffeb3b;
+  animation-delay: 0s;
+}
+
+.tristeza {
+  background-color: #1e88e5;
+  animation-delay: .2s;
+}
+
+.raiva {
+  background-color: #e53935;
+  animation-delay: .4s;
+}
+
+.medo {
+  background-color: #8e24aa;
+  animation-delay: .6s;
+}
+
+.nojo {
+  background-color: #43a047;
+  animation-delay: .8s;
+}
+
+@keyframes carregando {
+  from {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(-20px)
+  }
+}
